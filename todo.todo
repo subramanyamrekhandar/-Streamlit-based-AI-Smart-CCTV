@@ -1,0 +1,39 @@
+Create A Conda Environment and cofigures to activate the Environment ( Anaconda Navigator)
+--> conda create -n yolo_Newenv python=3.9
+--> conda activate yolo_Newenv
+
+
+
+install libraries 
+--> pip install streamlit opencv-python numpy ultralytics face-recognition pandas
+--> conda install face-recognition
+--> pip install CMake
+--> pip install dlib
+--> pip install Pillow
+--> pip install opencv-contrib-python
+--> pip install librosa
+--> pip install soundfile
+--> pip install mediapipe
+
+Run application
+--> streamlit run app.py
+
+
+Process for Dlib library:
+For everyone who still found error when installing this step, I will give a brief requirements for your system.
+
+Python3.9 [the most important]
+Download dlib (this) : https://raw.githubusercontent.com/Billyas/python-dlib/master/dist/dlib-19.23.0-cp39-cp39-win_amd64.whl
+Next, after the above requirement fulfilled, do this.
+
+pip install cmake
+pip install dlib-19.23.0-cp39-cp39-win_amd64.whl
+pip install opencv-python
+pip install face_recognition
+Bonus, in my case, I got error with the pillow library so you need to reinstall it, using these steps.
+
+pip uninstall pillow
+pip install Pillow
+Well, I hope this will help, thanks.
+
+
